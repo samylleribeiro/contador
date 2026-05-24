@@ -15,6 +15,7 @@ h1 {
 
 /* ===== RESULTADO/DISPLAY===== */
 #display {
+    font-size: 4rem; /* Deixa o número bem grandão e destacado no centro pro celular! */
     font-weight: bold;
     margin-bottom: 35px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
@@ -33,11 +34,16 @@ button {
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.2s, background-color 0.3s;
+    
 }
 
 button:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
+}
+button:active {
+    transform: scale(0.95); /* Faz o botão afundar no clique */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 /* ===== BOTÃO NOTURNO FLUTUANTE ===== */
 #btn-noturno {
